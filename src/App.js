@@ -11,22 +11,20 @@ import { Recipe } from './pages/Recipe';
 
 function App() {
 	return (
-
-			<div className="App">
-				<Header />
-				<main className="container content">
-					<Routes>
-						<Route path="/" element={<Home />} />
-						<Route path="/about" element={<About />} />
-						<Route path="/contact" element={<Contact />} />
-						<Route path="/category/:name" element={<Category />} />
-						<Route path="/meal/:id" element={<Recipe />} />
-						<Route path="*" element={<NotFound />} />
-					</Routes>
-				</main>
-				<Footer />
-			</div>
-
+		<div className="App">
+			<Header />
+			<main className="container content">
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/about" element={<About />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/category/:name" element={<Category />} />
+					<Route path="/meal/:id" element={<Recipe />} />
+					<Route path="*" element={<NotFound />} />
+				</Routes>
+			</main>
+			<Footer />
+		</div>
 	);
 }
 

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 function CategoryItem(props) {
   const { strCategory, strCategoryThumb, strCategoryDescription } = props;
 
-
   return (
     <div className="card">
       <div className="card-image">
