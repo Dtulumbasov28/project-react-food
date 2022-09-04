@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
@@ -11,20 +11,22 @@ import { Recipe } from './pages/Recipe';
 
 function App() {
 	return (
-		<div className="App">
-			<Header />
-			<main className="container content">
-			<Routes>
-				<Route path="/" element={<Home/>} />
-				<Route path="/about" element={<About/>} />
-				<Route path="/contact" element={<Contact/>} />
-				<Route path="/category/:name" element={<Category/>} />
-				<Route path="/meal/:id" element={<Recipe/>} />
-				<Route path="*" element={<NotFound/>} />
-			</Routes>
-			</main>
-			<Footer />
-		</div>
+		<BrowserRouter basename='/project-react-food'>
+			<div className="App">
+				<Header />
+				<main className="container content">
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/contact" element={<Contact />} />
+						<Route path="/category/:name" element={<Category />} />
+						<Route path="/meal/:id" element={<Recipe />} />
+						<Route path="*" element={<NotFound />} />
+					</Routes>
+				</main>
+				<Footer />
+			</div>
+		</BrowserRouter>
 	);
 }
 
