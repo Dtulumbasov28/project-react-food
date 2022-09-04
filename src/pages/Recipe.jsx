@@ -14,7 +14,11 @@ function Recipe() {
 
   return (
     <>
-      <button className="btn" onClick={() => navigate(-1)}>
+      <button
+        className="btn"
+        onClick={() => navigate(-1)}
+        style={{ margin: " 0  0 20px" }}
+      >
         Go Back
       </button>
       {!recipe.idMeal ? (
