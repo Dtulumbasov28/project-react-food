@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
@@ -11,7 +11,7 @@ import { Recipe } from './pages/Recipe';
 
 function App() {
 	return (
-		<BrowserRouter basename='/project-react-food'>
+
 			<div className="App">
 				<Header />
 				<main className="container content">
@@ -26,7 +26,7 @@ function App() {
 				</main>
 				<Footer />
 			</div>
-		</BrowserRouter>
+
 	);
 }
 
